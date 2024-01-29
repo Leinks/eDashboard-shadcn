@@ -53,7 +53,7 @@ export function Sidebar() {
 
 
       <div
-        className={`xl:h-[100vh] fixed xl:static w-[60%] md:w-[30%] lg:w-[20%] xl:w-[15%] h-full top-0 bg-white shadow-lg shadow-slate-800	 dark:shadow-white dark:text-gray-100 dark:bg-background p-4 flex flex-col justify-between z-50 ${
+        className={`xl:h-[93vh] fixed xl:static w-[60%] md:w-[30%] lg:w-[20%] xl:w-[15%] h-full top-0 bg-white shadow-lg shadow-slate-800	 dark:shadow-white dark:text-gray-100 dark:bg-background p-4 flex flex-col justify-between z-50 ${
           showMenu ? "left-0" : "-left-full"
         } transition-all`}
       >
@@ -65,14 +65,13 @@ export function Sidebar() {
           </Link>
           <ul>
           {SidebarData.map((item, index) => {
-                        return<li key={index}><SubMenu item={item}  /></li> ;
-                    })}
-
+                return<li key={index}><SubMenu item={item}  /></li> ;
+            })}
           </ul>
         </div>
         <nav className='hover:bg-slate-300 rounded-lg hover:text-black transition-colors'>
           <button  onClick={handleSignOut} >
-            <div  className="flex   items-center gap-4 py-2 px-4">
+            <div  className="flex items-center gap-4 py-2 px-4 text-sm">
                 <Lucide.Power className="hover:text-black" /> Cerrar sesión 
             </div>
           </button>         
