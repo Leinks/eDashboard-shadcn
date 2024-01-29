@@ -17,7 +17,7 @@ export function Login() {
 		{
 			navigate("/dashboard");
 		}
-	},[isAuthenticated])
+	}, [isAuthenticated, navigate])
 
 	const handleSubmit = (event: FormEvent) => {
 		event.preventDefault()

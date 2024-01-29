@@ -1,5 +1,5 @@
 import { Route, Outlet } from "react-router-dom"
-import * as Routing from "./path.tsx"
+import * as Routing from "../types/path.ts"
 import { lazy, Fragment, Suspense } from "react"
 import { RouteProp } from "@/types/types.ts"
 

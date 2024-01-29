@@ -33,3 +33,27 @@ export type ThemeProviderState = {
   theme: Theme
   setTheme: (theme: Theme) => void
 }
+
+//Types SideBarData
+export type SidebarItem = {
+  title: string
+  path: string
+  icon: React.ReactNode
+  active?: boolean
+  iconOpened?: React.ReactNode
+  iconClosed?: React.ReactNode
+  children?: SidebarItem[]
+
+}
+
+export type SidebarLinkProps = {
+  item: SidebarItem
+};
+//Types Path
+export type Path = {
+  _id?: string
+  path?: string
+  active?: boolean
+  created_at?: Date
+  update_at?: Date
+}
