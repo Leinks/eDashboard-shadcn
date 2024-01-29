@@ -46,7 +46,7 @@ export function Login() {
   return (
     <AuthLayout>
 
-    <div className="w-full max-w-sm p-6 m-auto mx-auto bg-white rounded-lg shadow-2xl dark:bg-background">
+    <div className="w-full max-w-sm p-6 m-auto mx-auto bg-white rounded-lg shadow-slate-500 shadow-xl dark:shadow-black dark:shadow-xl dark:bg-background">
         <div className="flex justify-center mx-auto">
                 <img className="w-auto h-7 sm:h-8" src="https://merakiui.com/images/logo.svg" />
         </div>
