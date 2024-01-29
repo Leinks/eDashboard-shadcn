@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card'
 
-function StatusCards() {
+export function StatusCards() {
   return (
         <div className="container mx-auto mt-12">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 ">
@@ -109,4 +109,3 @@ function StatusCards() {
   )
 }
 
-export default StatusCards

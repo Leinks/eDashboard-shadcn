@@ -77,10 +77,10 @@ export const routes: RouteProp[] = [
 			// 	path: Routing.PATH_CATEGORY,
 			// 	element: lazy(async ()=> await import('../pages/admin/Category').then(({ Category }) => ({default: Category}))),
 			// },
-			// {
-			// 	path: Routing.PATH_COMPANY,
-			// 	element: lazy(async ()=> await import('../pages/admin/Company').then(({ Company }) => ({default: Company}))),
-			// },
+			{
+				path: Routing.PATH_COMPANY,
+				element: lazy(async ()=> await import('../pages/admin/Company').then(({ Company }) => ({default: Company}))),
+			},
 			// {
 			// 	path: Routing.PATH_PRODUCT,
 			// 	element: lazy(async ()=> await import('../pages/admin/Product').then(({ Product }) => ({default: Product}))),

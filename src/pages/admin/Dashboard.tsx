@@ -1,4 +1,4 @@
-import  StatusCards  from "@/components/Card/StatusCards";
+import  {StatusCards}  from "@/components/Card/StatusCards";
 import { TopBar } from "@/components/Header/TopBar";
 import { Sidebar } from "@/components/SideBar/SideBar";
 // import {SidebarDemo} from "@/components/SideBar/SideBarDemo";
@@ -15,8 +15,6 @@ export function Dashboard() {
       <div className="flex">
         <Sidebar/>
         <StatusCards/> 
-
-        {/* <Paths/> */}
       </div>
     </AdminLayout> 
   )
