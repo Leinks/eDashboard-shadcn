@@ -57,3 +57,18 @@ export type Path = {
   created_at?: Date
   update_at?: Date
 }
+
+//Types Companys 
+export type CompanysProp = {
+  _id?: string
+  id_admin?: string
+  name?: string
+  document?: string
+  phone?: string
+  email?: string
+  logo?: string
+  description?: string
+  created_at?: Date
+  updated_at?: Date
+
+}

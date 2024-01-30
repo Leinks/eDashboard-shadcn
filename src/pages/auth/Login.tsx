@@ -34,6 +34,7 @@ export function Login() {
               break;
             case 1:
               localStorage.removeItem('Copilot');
+              localStorage.removeItem('unix');
               break;
           }
         });

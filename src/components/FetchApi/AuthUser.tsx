@@ -23,7 +23,8 @@ export async function AuthUser(data: {email:string,password:string}){
         if(response.data.accessToken){
           sessionStorage.setItem('name' , response.data.name)
           sessionStorage.setItem('email', response.data.email)   
-          localStorage.setItem('Copilot', EncryptData(response.data.accessToken) || "[]")     
+          localStorage.setItem('Copilot', EncryptData(response.data.accessToken) || "[]")   
+          localStorage.setItem('Unix', EncryptData(response.data.uni) || "[]")   
           console.log('Success',response.data)
          return 0;
         }

@@ -23,7 +23,7 @@ const PostManager = axios.create({
         // "Authorization" : `Bearer ${token}`
     }
 });
-const GetManager = axios.create({
+const GetManager = axios.create({ 
     baseURL:import.meta.env.VITE_BACKEND,
     headers:{
         "Content-type" : "application/json",
