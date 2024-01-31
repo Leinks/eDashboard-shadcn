@@ -16,7 +16,10 @@ export function Login() {
 		if (isAuthenticated)
 		{
 			navigate("/dashboard");
-		}
+		}else{
+      localStorage.removeItem('unix');
+      localStorage.getItem('Copilot')
+    }
 	}, [isAuthenticated, navigate])
 
 	const handleSubmit = (event: FormEvent) => {

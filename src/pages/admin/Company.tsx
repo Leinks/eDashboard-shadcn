@@ -18,17 +18,17 @@ export function Company() {
     // console.log('local-Decrypt',id_admin)
 
     useEffect(()=>{
-      console.log('Entro en el UseEffect')
+      // console.log('Entro en el UseEffect')
         if (id_admin)
         {
           const FindCompanys = async () => {
             try {
             await GetCompany(id_admin).then((response) =>{
-                console.log('Entro en el Try')
+                // console.log('Entro en el Try')
                 setData(response)
                  
               })
-            } catch (error: any) {
+            } catch (error: unknown) {
               console.log('Company Error',error)
             }
           } 

@@ -5,11 +5,11 @@ import { GetsManager } from '../Api/ApiManager';
 
 export async function GetCompany(id_admin:string) {
     const token = DecryptData(localStorage.getItem('Copilot')!) 
-    console.log('id_admin del GetCompany',id_admin)
+    // console.log('id_admin del GetCompany',id_admin)
     if(token)
     {
         try {
-            const response = await GetsManager( 'company/',
+            const response = await GetsManager( 'company/v1/',
             {
                 method: 'GET',
                 headers:{
@@ -20,16 +20,16 @@ export async function GetCompany(id_admin:string) {
                 Accept: '*',          
             },
             params:{
-                id_admin:'65b7bce41a9b833982c4491e',
+                id_admin: id_admin,
             }
         
-            // setCompany(response.data)
+                // data: id_admin
             
         })
-            console.log('GetCompany',response)
+            // console.log('GetCompany',response)
             if(response.data){
                 const result = response.data
-                console.log('Error',result)
+                console.log('Get Result',result)
                 return result
                 }
 

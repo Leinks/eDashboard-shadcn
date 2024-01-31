@@ -2,6 +2,7 @@ import { Route, Outlet } from "react-router-dom"
 import * as Routing from "../types/path.ts"
 import { lazy, Fragment, Suspense } from "react"
 import { RouteProp } from "@/types/types.ts"
+import { LucideShell } from "lucide-react"
 
 
 
@@ -16,7 +17,7 @@ export function renderRoutes (routes: RouteProp[]) {
 					key={index}
 					path = {route.path}
 					element = {
-						<Suspense fallback={<h1>Loading . . .</h1>}>
+						<Suspense fallback={<div className='flex items-center justify-center w-screen h-screen'><LucideShell className="mr-3 h-5 w-5 animate-spin"/><span>Loading . . .</span> </div>}>
 							<Guard>
 								<Layout>{route.children ? <Outlet /> : <Component />}</Layout>
 							</Guard>
