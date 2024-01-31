@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '../ui/card'
 
 export function CompanyCards() {
   return (
-        <div className="container mx-auto mt-12">
+        <div>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 ">
             <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">

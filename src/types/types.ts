@@ -60,15 +60,27 @@ export type Path = {
 
 //Types Companys 
 export type CompanysProp = {
-  _id?: string
-  id_admin?: string
-  name?: string
-  document?: string
-  phone?: string
-  email?: string
-  logo?: string
-  description?: string
-  created_at?: Date
-  updated_at?: Date
+  _id: string
+  id_admin: string
+  name: string
+  document: string
+  phone: string
+  email: string
+  logo: string
+  description: string
+  created_at: Date
+  updated_at: Date
 
 }
+
+//Types Pyments
+export type Payment = {
+  id: string
+  id_store: string
+  ref: string
+  amount: number
+  status: "pending" | "processing" | "success" | "failed"
+  email: string
+}
+
+//Types Datatable
