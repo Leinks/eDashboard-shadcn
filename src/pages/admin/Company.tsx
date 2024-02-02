@@ -1,6 +1,6 @@
 import { CompanyCards } from "@/components/Card/CompanyCards";
-import { DataTable } from "@/components/Company.tsx/DataTable";
 import { columns } from "@/components/DataTable/CompanyColumns";
+import { DataTable } from "@/components/DataTable/DataTable";
 import { GetCompany } from "@/components/FetchApi/GetCompany";
 import { TopBar } from "@/components/Header/TopBar";
 import { Sidebar } from "@/components/SideBar/SideBar";
