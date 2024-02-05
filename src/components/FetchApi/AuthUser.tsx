@@ -15,7 +15,8 @@ export async function AuthUser(data: {email:string,password:string}){
         {
           method: 'POST',
           headers:{
-          Accept: '*',  
+          // Accept: 'application/json',  
+          Accept: '*', 
                      
         },
             data: BodyContent,
@@ -32,6 +33,7 @@ export async function AuthUser(data: {email:string,password:string}){
           localStorage.removeItem('Copilot');
         return 1;
     } catch (e: unknown) {
+        console.log('error',e)
           console.info(e)
         return 1;
       }

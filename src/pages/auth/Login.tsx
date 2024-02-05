@@ -40,7 +40,7 @@ export function Login() {
               localStorage.removeItem('unix');
               break;
           }
-        });
+        })
       }
     } catch (e: unknown) {
       console.info(e)
