@@ -69,37 +69,37 @@ export function DialogCompany() {
             <Label htmlFor="name" className="text-right">
               Name
             </Label>
-            <Input onChange={(e) => setName(e.target.value)} id="name" defaultValue="" className="col-span-3" />
+            <Input onChange={(e) => setName(e.target.value)} id="name"className="col-span-3" />
           </div>
           <div className="grid grid-cols-4 items-center gap-4">
             <Label htmlFor="document" className="text-right">
               Document
             </Label>
-            <Input onChange={(e) => setDocument(e.target.value)} id="document"  defaultValue="" className="col-span-3" />
+            <Input onChange={(e) => setDocument(e.target.value)} id="document" className="col-span-3" />
           </div>
           <div className="grid grid-cols-4 items-center gap-4">
             <Label htmlFor="email" className="text-right">
               Email
             </Label>
-            <Input onChange={(e) => setEmail(e.target.value)} id="email" type="email" defaultValue="" className="col-span-3" />
+            <Input onChange={(e) => setEmail(e.target.value)} id="email" type="email"className="col-span-3" />
           </div>
           <div className="grid grid-cols-4 items-center gap-4">
             <Label htmlFor="logo" className="text-right">
               Logo
             </Label>
-            <Input onChange={(e) => setLogo(e.target.value)} id="logo" defaultValue="" className="col-span-3" />
+            <Input onChange={(e) => setLogo(e.target.value)} id="logo"className="col-span-3" />
           </div>
           <div className="grid grid-cols-4 items-center gap-4">
             <Label htmlFor="phone" className="text-right">
               Phone
             </Label>
-            <Input onChange={(e) => setPhone(e.target.value)}  id="phone" defaultValue="" className="col-span-3" />
+            <Input onChange={(e) => setPhone(e.target.value)}  id="phone"className="col-span-3" />
           </div>
           <div className="grid grid-cols-4 items-center gap-4">
             <Label htmlFor="description" className="text-right">
               Description
             </Label>
-            <Input onChange={(e) => setDescription(e.target.value)} id="description" defaultValue="" className="col-span-3" />
+            <Input onChange={(e) => setDescription(e.target.value)} id="description"className="col-span-3" />
           </div>
         </div>
    

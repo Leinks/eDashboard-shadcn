@@ -20,7 +20,8 @@ export async function AuthUser(data: {email:string,password:string}){
                      
         },
             data: BodyContent,
-        });
+          });
+          console.log('BodyContent',BodyContent)
         if(response.data.accessToken){
           sessionStorage.setItem('name' , response.data.name)
           sessionStorage.setItem('email', response.data.email)   
