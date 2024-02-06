@@ -15,7 +15,6 @@ export async function AuthUser(data: {email:string,password:string}){
         {
           method: 'POST',
           headers:{
-          // Accept: 'application/json',  
           Accept: '*', 
                      
         },

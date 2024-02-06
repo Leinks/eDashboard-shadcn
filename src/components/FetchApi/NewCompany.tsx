@@ -24,7 +24,6 @@ export async function NewCompany(data: {name: string,document:string,email:strin
           localStorage.removeItem('Copilot');
         return 1;
     } catch (e: unknown) {
-       // console.log('error',e)
           console.info(e)
         return 1;
       }

@@ -39,7 +39,7 @@ export function DialogCompany() {
       }).then(async (response) => {
         switch (response) {
           case 0:
-             alert('Se creo El Bethoveen')
+            alert('Se creo El Bethoveen')
             break;
           case 1:
             alert('Naranja')
