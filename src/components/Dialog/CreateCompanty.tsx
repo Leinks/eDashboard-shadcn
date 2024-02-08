@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogDescription,
   DialogFooter,
@@ -39,15 +40,17 @@ export function DialogCompany() {
       }).then(async (response) => {
         switch (response) {
           case 0:
-            alert('Se creo El Bethoveen')
+            console.log('Create Company',response)
+            // alert('Se creo El Bethoveen')
             break;
           case 1:
-            alert('Naranja')
+            // alert('Naranja')
+            console.log('Create Company',response)
             break;
         }
       })
-    } catch (error) {
-      
+    } catch (error: unknown) {
+      console.log('Create Company',error)
     }
   
   }
@@ -104,7 +107,12 @@ export function DialogCompany() {
         </div>
    
         <DialogFooter>
+          <DialogClose asChild>
           <Button type="submit">Save changes</Button>
+          </DialogClose>
+          {/* <AlertDialogCancel>Cancel</AlertDialogCancel> */}
+          {/* <AlertDialogAction>Continue</AlertDialogAction> */}
+
         </DialogFooter>
       </form>
       </DialogContent>
