@@ -1,4 +1,4 @@
-
+import { Button } from "@/components/ui/button"
 import {
   Dialog,
   DialogClose,
@@ -9,13 +9,12 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { useState } from "react";
-import { FormEvent } from "@/types/types";
-import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
-import { NewCompany } from "../FetchApi/NewCompany";
+import { Label } from "@/components/ui/label"
+import { FormEvent } from "@/types/types";
+import { useState } from "react";
 import { DecryptData } from '@/lib/utils/DecryptData';
+import { NewCompany } from "../FetchApi/NewCompany";
  
 export function DialogCompany() {
   const [name, setName] = useState("");
@@ -25,7 +24,6 @@ export function DialogCompany() {
   const [phone, setPhone] = useState("");
   const [description, setDescription] = useState("");
   const id_admin: string = DecryptData(localStorage.getItem('Unix')!) 
-
   const handleSubmit = (event: FormEvent) => {
 		event.preventDefault()
     try {
@@ -36,7 +34,9 @@ export function DialogCompany() {
         logo: logo,
         phone: phone,
         description: description,
-        id_admin: id_admin   
+        id_admin: id_admin
+
+        
       }).then(async (response) => {
         switch (response) {
           case 0:
@@ -49,8 +49,8 @@ export function DialogCompany() {
             break;
         }
       })
-    } catch (e: unknown) {
-      console.info(e)
+    } catch (error: unknown) {
+      console.log('Create Company',error)
     }
   
   }
@@ -63,7 +63,7 @@ export function DialogCompany() {
         <DialogHeader>
           <DialogTitle>Create a New Company</DialogTitle>
           <DialogDescription>
-            Make a new company here. Click save when you're done.
+            Make changes to your profile here. Click save when you're done.
           </DialogDescription>
         </DialogHeader>
       <form className="mt-6" onSubmit={ handleSubmit}>

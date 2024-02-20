@@ -24,8 +24,8 @@ export async function GetCompany(id_admin:string) {
                 return result
                 }
 
-        } catch (e: unknown) {
-            console.info(e)
+        } catch (error) {
+            console.log('error-Company',error)
         }
     }
 }
