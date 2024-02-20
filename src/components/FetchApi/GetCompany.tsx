@@ -21,7 +21,6 @@ export async function GetCompany(id_admin:string) {
         })
             if(response.data){
                 const result = response.data
-                console.log('Get Result',result)
                 return result
                 }
 

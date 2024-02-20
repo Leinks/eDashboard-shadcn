@@ -19,7 +19,7 @@ export function Sidebar() {
   return (
     <>      
       <div
-        className={`fixed xl:h-[93vh] h-full w-[60%] md:w-[30%] lg:w-[20%] xl:w-[15%] xl:static top-0 bg-white shadow-lg shadow-slate-800	 dark:shadow-white dark:shadow-sm dark:text-gray-100 dark:bg-background p-4 flex flex-col justify-between z-50 ${
+        className={`fixed xl:h-[100vh] h-full w-[60%] md:w-[30%] lg:w-[20%] xl:w-[15%] xl:static top-0 bg-white shadow-lg shadow-slate-800	 dark:shadow-white dark:shadow-sm dark:text-gray-100 dark:bg-background p-4 flex flex-col justify-between z-50 ${
           showMenu ? "left-0" : "-left-full"
         } transition-all`}
       >
