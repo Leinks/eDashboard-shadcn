@@ -15,6 +15,7 @@ import { FormEvent } from "@/types/types";
 import { useState } from "react";
 import { DecryptData } from '@/lib/utils/DecryptData';
 import { NewCompany } from "../FetchApi/NewCompany";
+import { errorMessage, successMessage } from "@/lib/utils/Alerts";
  
 export function DialogCompany() {
   const [name, setName] = useState("");
@@ -42,6 +43,7 @@ export function DialogCompany() {
           case 0:
             console.log('Create Company',response)
             // alert('Se creo El Bethoveen')
+            console.log(successMessage,'Create Company',response) 
             break;
           case 1:
             // alert('Naranja')
